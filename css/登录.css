@@ -1,9 +1,44 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-.top{
-    width: ;
-    height: 3rem;
-    background-color: wheat;
+.top {
+  height: 1rem;
+  background-color: wheat;
+  display: flex;
+  padding-left: 0.3rem;
+  margin-bottom: 1rem;
+}
+.you {
+  font-size: 0.4rem;
+  line-height: 1rem;
+}
+.you1 {
+  width: 80%;
+  font-size: 0.36rem;
+  text-align: center;
+  line-height: 1rem;
+}
+.you2 {
+  color: #1c4eb0;
+  line-height: 1rem;
+}
+/* 正则验证 */
+.cent{
+    padding: 0 0.3rem;
+}
+.tel {
+  height: 1rem;
+  font-size: 0.36rem;
+  border-bottom: 0.02rem solid #D7D7D7;
+}
+.phone {
+  height: 0.6rem;
+  margin-top: 0.3rem;
+  border: none;
+  outline: none;
+  width: 70%;
+}
+.liu6{
+    width: 5%;
 }
