@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+.sea{
+    height: 2.5rem;
+    background-color: #1348AE;
+}
+.top {
+    height: 1rem;
+    background-color: #1348AE;
+    display: flex;
+    padding-left: 0.3rem;
+    margin-bottom: 0.5rem;
+  }
+  .you {
+    font-size: 0.4rem;
+    line-height: 1rem;
+    color: #fff;
+  }
+  .you1 {
+    width: 80%;
+    font-size: 0.36rem;
+    text-align: center;
+    line-height: 1rem;
+    color: #fff;
+  }
+  .sear{
+      margin-left: 10%;
+      width: 85%;
+      padding-left:0.1rem;
+    border-radius: 0.1rem;
+    border: 0.02rem solid #fff;
+  }
+  .search{
+      margin-top: 0.1rem;
+      width: 6%;
+  }
+  .text{
+      background-color: #1348AE;
+      border: none;
+      color: #fff;
+      outline: none;
+  }
+/* .container{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    width: 500px;
+}
+.list{
+    width: 20%;
+}
+.inner{
+    width: 500px;
+    height: 300px;
+    margin-left: 80px;
+    border: 1px solid red;
+    position: relative;
+}
+.list-item{
+    position: absolute;
+    left: 30px;
+    top: 0;
+    width: 500px;
+    height: 300px;
+    text-align: center;
+    display: none;
+}
+.list-item:first-child{
+    display: block;
+}
+.active{
+    color: orange;
+    border-bottom: 3px solid orangered;
+} */
