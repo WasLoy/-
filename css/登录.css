@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0;
 }
+a{
+  text-decoration: none;
+  color: #1c4eb0;
+}
 .top {
   height: 1rem;
   background-color: wheat;
@@ -12,6 +16,7 @@
 .you {
   font-size: 0.4rem;
   line-height: 1rem;
+  color: #1c4eb0;
 }
 .you1 {
   width: 80%;
@@ -41,4 +46,41 @@
 }
 .liu6{
     width: 5%;
+}
+.pas {
+  height: 1rem;
+  font-size: 0.36rem;
+  border-bottom: 0.02rem solid #D7D7D7;
+}
+.password {
+  height: 0.6rem;
+  margin-top: 0.3rem;
+  border: none;
+  outline: none;
+  width: 69%;
+  margin-left: 0.3rem;
+}
+.cent button{
+  height: 1rem;
+  width: 100%;
+  background-color: #F8C511;
+  border: none;
+  color: #fff;
+  margin-top: 1rem;
+  font-size: 0.36rem;
+  margin-bottom: 0.5rem;
+}
+.deng{
+  color: #959595;
+}
+.jing{
+  margin-left: 50%;
+}
+.end{
+  margin-top: 2.3rem;
+  display: flex;
+  justify-content: space-between;
+}
+.end img{
+  width: 15%;
 }

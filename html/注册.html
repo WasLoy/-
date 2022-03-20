@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/注册.css" />
+    <script src="../js/rem.js"></script>
+    <script src="../js/zepto.js"></script>
+  </head>
+  <body>
+    <div class="top">
+      <p class="you"><a href="../html/登录.html"><</a></p>
+      <p class="you1">注册</p>
+    </div>
+    <div class="cent">
+      <div class="chin">
+        <p>国家地区 <span style="margin-left: 0.3rem">中国+86</span></p>
+      </div>
+      <div class="tel">
+        手机号
+        <input
+          type="text"
+          maxlength="11"
+          oninput="value=value.replace(/[^\d]/g,'')"
+          placeholder="    常用手机号"
+          class="phone"
+          onChange="checkPhone(this.value)"
+        />
+        <img src="../img/liu(6).png" alt="" class="liu6" />
+      </div>
+      <div class="yan">
+        验证码
+        <input type="text" class="shu" maxlength="6"/>
+        <button class="get">获取验证码</button>
+      </div>
+      <div class="pas">
+        设置密码
+        <input
+          type="password"
+          placeholder="    6~12位大小写字母，数字"
+          class="password"
+          pattern="[A-z]{6,12}"
+        />
+        <img src="../img/liu(6).png" alt="" class="liu-x" />
+        <img src="../img/liu7.png" alt="" class="eye" />
+      </div>
+      <button class="zhu">注册</button>
+      <div class="end">
+        <!-- <button>重新发送</button>
+          <button></button> -->
+      </div>
+    </div>
+    <script>
+      var tel = document.querySelector(".tel");
+      var pho = document.querySelector(".phone");
+      var img = document.querySelector(".liu6");
+      var eye = document.querySelector(".eye");
+      var get = document.querySelector(".get");
+      var liux = document.querySelector(".liu-x");
+      var password = document.querySelector(".password");
+      var get = document.querySelector(".get");
+      var shu = document.querySelector(".shu");
+      var flag = 0;
+      //   手机号正则
+      function checkPhone(phone) {
+        var ab = /1[3,4,5,7,8][0-9]{9}$/;
+        if (ab.test(phone) == true) {
+
+
+            // 如果手机号正确，获取验证码，验证码定时开始，
+          var time = 60; // 定义剩下的秒数
+          get.addEventListener("click", function () {
+            get.disabled = true;
+            var timer = setInterval(function () {
+              if (time == 0) {//如果时间超时，则显示重新发送，点击重启计时器
+                // 清除定时器和复原按钮
+                clearInterval(timer);
+                get.disabled = false;
+                get.innerHTML = "重新发送";
+                time = 60; // 重新赋值时间变量
+              } else { // 开启计时器
+                get.innerHTML = time + "s";
+                time--;
+              }
+            }, 1000);
+
+            //   手机号后面 x的点击事件(手机号去除，定时器重新获取)
+            img.onclick = function () {
+                pho.value = ""; //手机号取消
+                clearInterval(timer); // 定时器停止定时，显示重新获取，如果重新输入手机号，点重新获取，定时去重新开始定时
+                get.disabled = false;
+                get.innerHTML = "重新获取";
+                time = 60;
+                shu.value = ""
+  
+              };
+          });
+        } else {
+          alert("请正确填写手机号码!");
+          pho.value = "";
+        }
+      }
+
+      //   密码框后面 x
+      liux.onclick = function () {
+        console.log("kkk");
+        password.value = "";
+      };
+      //   密码框眼睛
+      eye.onclick = function () {
+        if (flag == 0) {
+          password.type = "text";
+          flag = 1;
+        } else {
+          password.type = "password";
+          flag = 0;
+        }
+      };
+    </script>
+  </body>
+</html>
