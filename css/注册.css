@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #1c4eb0;
+}
+p {
+  margin-bottom: 0rem;
+}
+.top {
+  height: 1rem;
+  display: flex;
+  padding-left: 0.3rem;
+  margin-bottom: 1rem;
+}
+.you {
+  font-size: 0.4rem;
+  line-height: 1rem;
+  color: #1c4eb0;
+}
+.you1 {
+  width: 80%;
+  font-size: 0.36rem;
+  text-align: center;
+  line-height: 1rem;
+}
+.cent {
+  padding: 0 0.3rem;
+}
+.chin {
+  line-height: 1rem;
+  height: 1rem;
+  font-size: 0.36rem;
+  border-bottom: 0.02rem solid #d7d7d7;
+}
+.tel {
+  height: 1rem;
+  font-size: 0.36rem;
+  border-bottom: 0.02rem solid #d7d7d7;
+}
+.phone {
+  height: 0.6rem;
+  margin-top: 0.3rem;
+  border: none;
+  outline: none;
+  width: 68%;
+  margin-left: 0.3rem;
+}
+.liu6 {
+  width: 5%;
+}
+.yan {
+  height: 1rem;
+  font-size: 0.36rem;
+  border-bottom: 0.02rem solid #d7d7d7;
+  line-height: 1rem;
+}
+.shu {
+  height: 0.6rem;
+  margin-top: 0.3rem;
+  border: none;
+  outline: none;
+  width: 39%;
+  margin-left: 0.3rem;
+}
+.yan button {
+  margin-left: 5%;
+  width: 30%;
+  height: 0.7rem;
+  background-color: #cccccc;
+  border: none;
+  color: #fff;
+  border-radius: 0.1rem;
+  font-size: 0.34rem;
+}
+.pas {
+  height: 1rem;
+  font-size: 0.36rem;
+  border-bottom: 0.02rem solid #d7d7d7;
+}
+.password {
+  height: 0.6rem;
+  margin-top: 0.3rem;
+  border: none;
+  outline: none;
+  width: 55%;
+}
+.liu-x {
+  width: 5%;
+}
+.eye {
+  width: 8%;
+  margin-right: 0.3rem;
+}
+.zhu {
+  height: 1rem;
+  width: 100%;
+  background-color: #f8c511;
+  border: none;
+  color: #fff;
+  margin-top: 1rem;
+  font-size: 0.36rem;
+  margin-bottom: 0.5rem;
+}
