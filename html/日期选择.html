@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../css/simple-calendar.css" />
+		<link rel="stylesheet" type="text/css" href="../css/日期选择.css" />
+	</head>
+	<body>
+		<div class="top">
+			<div class="top-l">
+				<<!-- < -->
+			</div>
+			<div class="top-c">
+				选择日期和人数
+			</div>
+			<div class="top-r">
+				起价说明
+			</div>
+		</div>
+		<div class="k">
+			<div id="container">
+
+			</div>
+		</div>
+		<ul class="end">
+			<li class="chengren">
+				<p>成人<span>¥3159/人</span></p>
+				<div class="number">
+				    <input id="cut" type="button"  value="-" />
+				   	<input id="num" type="text" value="0"/>
+				   	<input id="add" type="button"  value="+" />
+				</div>
+			</li>
+			<li class="chengren">
+				<p>儿童</p>
+				<div class="number">
+				    <input id="cut" type="button"  value="-" />
+				   	<input id="num" type="text" value="0"/>
+				   	<input id="add" type="button"  value="+" />
+				</div>
+			</li>
+			<li class="xiedai">
+				<div>
+					<input type="checkbox">
+				</div>
+				<p>携带幼儿   <span>0~2岁</span></p>
+			</li>
+			<li class="zhuyi">
+				<p>
+					最少1人起订，年龄2—12周岁，不占床，不含早，只含当地的正餐半餐、车位以及导服，其他需要自理。成人+儿童最多支持9人，
+					<span>*以上均为均价</span>
+				</p>
+			</li>
+			<li class="money">
+				<div class="jin">
+					总额:<span>   ¥6318    </span>明细>
+				</div>
+				<div class="xia">
+					下一步<span>选择资源</span>
+				</div>
+			</li>
+		</ul>
+		<!-- js -->
+		<script src="../js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/zepto.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/simple-calendar.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var myCalendar = new SimpleCalendar('#container');
+		</script>
+		<script type="text/javascript">
+			$(function(){
+				    var price=0;
+				    $("#cut").click(function(){
+				          price=$("#num").val();
+				          if($("#num").val()==0){
+				          return
+				      }
+				      else{
+				          price--;
+				      }
+				      $("#num").val(price);
+				    })
+				    $("#add").click(function(){
+				          price=$("#num").val();
+				       price++;
+				      $("#num").val(price);
+				    })
+				 })
+
+		</script>
+	</body>
+</html>

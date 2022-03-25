@@ -1,0 +1,185 @@
+.top {
+	width: 100%;
+	display: flex;
+	height: 88px;
+	line-height: 88px;
+	text-align: center;
+	background: #1448AE;
+	color: #FFFFFF;
+}
+
+.top-l {
+	width: 15%;
+	font-size: 32px;
+}
+
+.top-c {
+	width: 65%;
+	font-size: 32px;
+}
+
+.top-r {
+	width: 20%;
+	font-size: 24px;
+}
+
+.k {
+	width: 100%;
+	height: 650px;
+	position: relative;
+	top: 0;
+}
+
+#container {
+	width: 100%;
+	height: 650px;
+}
+
+.sc-header div {
+	width: 50%;
+	font-size: 28px;
+	padding-bottom: 14px;
+}
+
+.sc-header div:nth-child(3) {
+	display: none;
+}
+
+.sc-header div:last-child {
+	display: none;
+}
+
+.sc-header {
+	height: 60px;
+}
+
+.sc-header select {
+	font-size: 28px;
+}
+
+.sc-item .day {
+	font-size: 28px;
+}
+
+
+
+.end {
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+}
+
+.end li {
+	margin-left: 6%;
+	width: 94%;
+	height: 130px;
+	line-height: 130px;
+	border-bottom: 1px solid #EEEEEE;
+}
+
+.chengren {
+	display: flex;
+}
+
+.chengren p {
+	width: 65%;
+	font-size: 40px;
+	color: #666666;
+}
+
+.number {
+	text-align: center;
+	width: 35%;
+}
+
+.chengren span {
+	margin-left: 40px;
+	font-size: 28px;
+	color: #f88412;
+}
+
+#cut {
+	width: 50px;
+	height: 50px;
+	color: #E5E5E5;
+	background: #FFFFFF;
+	border: 1px solid #E5E5E5;
+	border-right: none;
+}
+
+#num {
+	width: 80px;
+	height: 50px;
+	text-align: center;
+	background: #E5E5E5;
+	border: none;
+}
+
+#add {
+	width: 50px;
+	height: 50px;
+	color: #E5E5E5;
+	background: #FFFFFF;
+	border: 1px solid #E5E5E5;
+	border-left: none;
+}
+
+.xiedai {
+	display: flex;
+}
+
+.xiedai div {
+	width: 10%;
+}
+
+.xiedai input {
+	margin-top: 50px;
+	width: 45px;
+	height: 45px;
+}
+
+.xiedai p {
+	font-size: 36px;
+}
+
+.xiedai span {
+	font-size: 28px;
+}
+
+.zhuyi p {
+	margin-left: 70px;
+	line-height: 42px !important;
+}
+
+.zhuyi span {
+	color: #f88412;
+}
+
+.money {
+	display: flex;
+}
+
+.jin {
+	text-align: center;
+	font-size: 28px;
+	width: 60%;
+	color: #FFA500;
+}
+
+.jin span {
+	font-size: 32px;
+}
+
+.xia {
+
+	font-size: 36px;
+	text-align: center;
+	height: 130px;
+	width: 40%;
+	background: #FFA500;
+	color: #fffefe;
+}
+
+.xia span {
+	font-size: 28px;
+}
