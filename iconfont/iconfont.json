@@ -1,0 +1,44 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "577364",
+      "name": "首页",
+      "font_class": "shouye",
+      "unicode": "e751",
+      "unicode_decimal": 59217
+    },
+    {
+      "icon_id": "630095",
+      "name": "向左箭头",
+      "font_class": "xiangzuojiantou",
+      "unicode": "e660",
+      "unicode_decimal": 58976
+    },
+    {
+      "icon_id": "658017",
+      "name": "个人",
+      "font_class": "geren",
+      "unicode": "e657",
+      "unicode_decimal": 58967
+    },
+    {
+      "icon_id": "2076299",
+      "name": " 目的地",
+      "font_class": "mudedi",
+      "unicode": "e89d",
+      "unicode_decimal": 59549
+    },
+    {
+      "icon_id": "22360637",
+      "name": "浏览历史",
+      "font_class": "liulanlishi",
+      "unicode": "e67a",
+      "unicode_decimal": 59002
+    }
+  ]
+}
