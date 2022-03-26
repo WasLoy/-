@@ -24,44 +24,47 @@
 
 			</div>
 		</div>
-		<ul class="end">
-			<li class="chengren">
-				<p>成人<span>¥3159/人</span></p>
-				<div class="number">
-				    <input id="cut" type="button"  value="-" />
-				   	<input id="num" type="text" value="0"/>
-				   	<input id="add" type="button"  value="+" />
-				</div>
-			</li>
-			<li class="chengren">
-				<p>儿童</p>
-				<div class="number">
-				    <input id="cut" type="button"  value="-" />
-				   	<input id="num" type="text" value="0"/>
-				   	<input id="add" type="button"  value="+" />
-				</div>
-			</li>
-			<li class="xiedai">
-				<div>
-					<input type="checkbox">
-				</div>
-				<p>携带幼儿   <span>0~2岁</span></p>
-			</li>
-			<li class="zhuyi">
-				<p>
-					最少1人起订，年龄2—12周岁，不占床，不含早，只含当地的正餐半餐、车位以及导服，其他需要自理。成人+儿童最多支持9人，
-					<span>*以上均为均价</span>
-				</p>
-			</li>
-			<li class="money">
-				<div class="jin">
-					总额:<span>   ¥6318    </span>明细>
-				</div>
-				<div class="xia">
-					下一步<span>选择资源</span>
-				</div>
-			</li>
-		</ul>
+		<div class="footer">
+			<ul class="end">
+				<li class="chengren">
+					<p>成人<span>¥3159/人</span></p>
+					<div class="number">
+						<input id="cut" type="button" value="-" />
+						<input id="num" type="text" value="0" />
+						<input id="add" type="button" value="+" />
+					</div>
+				</li>
+				<li class="chengren">
+					<p>儿童</p>
+					<div class="number">
+						<input id="cut" type="button" value="-" />
+						<input id="num" type="text" value="0" />
+						<input id="add" type="button" value="+" />
+					</div>
+				</li>
+				<li class="xiedai">
+					<div>
+						<input type="checkbox">
+					</div>
+					<p>携带幼儿 <span>0~2岁</span></p>
+				</li>
+				<li class="zhuyi">
+					<p>
+						最少1人起订，年龄2—12周岁，不占床，不含早，只含当地的正餐半餐、车位以及导服，其他需要自理。成人+儿童最多支持9人，
+						<span>*以上均为均价</span>
+					</p>
+				</li>
+				<li class="money">
+					<div class="jin">
+						总额:<span> ¥6318 </span>明细>
+					</div>
+					<div class="xia">
+						<a href="选择资源.html">下一步<span>选择资源</span></a>
+					</div>
+				</li>
+			</ul>
+		</div>
+
 		<!-- js -->
 		<script src="../js/rem.js" type="text/javascript" charset="utf-8"></script>
 		<script src="../js/zepto.js" type="text/javascript" charset="utf-8"></script>
@@ -70,25 +73,23 @@
 			var myCalendar = new SimpleCalendar('#container');
 		</script>
 		<script type="text/javascript">
-			$(function(){
-				    var price=0;
-				    $("#cut").click(function(){
-				          price=$("#num").val();
-				          if($("#num").val()==0){
-				          return
-				      }
-				      else{
-				          price--;
-				      }
-				      $("#num").val(price);
-				    })
-				    $("#add").click(function(){
-				          price=$("#num").val();
-				       price++;
-				      $("#num").val(price);
-				    })
-				 })
-
+			$(function() {
+				var price = 0;
+				$("#cut").click(function() {
+					price = $("#num").val();
+					if ($("#num").val() == 0) {
+						return
+					} else {
+						price--;
+					}
+					$("#num").val(price);
+				})
+				$("#add").click(function() {
+					price = $("#num").val();
+					price++;
+					$("#num").val(price);
+				})
+			})
 		</script>
 	</body>
 </html>

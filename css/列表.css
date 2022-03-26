@@ -193,3 +193,10 @@ ul li{
     align-items: center;
     justify-content: space-around;
 }
+a{
+	text-decoration: none;
+}
+ a{
+	 color: #000000;
+	
+}
